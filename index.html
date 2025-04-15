@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Tailwind 1 Project Trafalgar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              screens: {
+                'sm': {'min': '320px', 'max': '480px'},
+                'md': '768px',
+                'lg': '1024px',
+                'xl': '1280px',
+                '2xl': '1536px',
+              }
+            }
+          }
+        };
+      </script>
+</head>
+<body>
+
+    <section class="max-w-[1250px] mx-auto mt-12 box-border sm:mx-[30px]">
+        <nav class="flex items-center justify-between relative max-w-full">
+            <div class="flex items-center">
+                <h2 class="bg-blue-500 text-white text-[30px] font-medium h-11 w-11 rounded-full cursor-default text-center">T</h2>
+                <h3 class="ml-3 text-2xl font-semibold cursor-pointer"><a href="#">Trafalgar</a></h3>
+            </div>
+          
+            <ul class="flex space-x-6 text-base">
+                <li class="font-semibold text-base hover:text-gray-700 cursor-pointer"><a href="#">Home</a></li>
+                <li class="text-gray-500 hover:text-gray-800 font-normal cursor-pointer"><a href="#">Find a Doctor</a></li>
+                <li class="text-gray-500 hover:text-gray-800 font-normal cursor-pointer"><a href="#">Apps</a></li>
+                <li class="text-gray-500 hover:text-gray-800 font-normal cursor-pointer"><a href="#">Testimonials</a></li>
+                <li class="text-gray-500 hover:text-gray-800 font-normal cursor-pointer"><a href="#">About Us</a></li>
+            </ul>
+            <img src="images/dots (2).png" class="absolute top-[80px] left-[-130px] w-auto h-auto">
+        </nav>
+
+    <section class="flex justify-between mt-[70px] sm:mt-[0px] sm:space-x-10 ">
+        <div class="mt-[60px] sm:ml-[15px]">
+            <h1 class="font-semibold tracking-normal text-5xl leading-snug cursor-default sm:text-[17px] sm:cursor-default">Virtual healthcare <br>
+                for you</h1>
+            <p class="mt-6 leading-relaxed text-gray-500 text-xl cursor-default sm:text-[10px] sm:mt-3 sm:cursor-default">Trafalgar provides progressive, and affordable <br>
+                healthcare, accessible on mobile and online <br>
+                for everyone</p>
+                <button class="mt-9 text-[18px] font-semibold text-white bg-blue-500 w-[200px] h-[60px] rounded-[55px] border border-transparent duration-300 hover:bg-transparent hover:text-blue-500 hover:border-blue-500 transition-transform transform hover:scale-110 origin-center sm:mt-3 sm:text-[10px] sm:w-[100px] sm:h-[30px] sm:whitespace-nowrap sm:cursor-pointer"><a href="webpage2.html">Consult Today</a></button>
+        </div>
+        <div>
+            <img src="images/trafalgar-header illustration 1.png">
+        </div>
+    </section>
+
+
+    <section class="mt-[200px] max-w-[1150px] mx-auto relative sm:mt-[50px]">
+        <h1 class="font-semibold text-center text-4xl cursor-default sm:text-xl sm:block sm:mx-auto">Our Services</h1>
+        <div class=" bg-black h-[3px] w-[75px] block mx-auto rounded-full mt-8"></div>
+        <p class="text-center text-[18px] mt-10 text-gray-500 leading-[25px] cursor-default">We provide to you the best choiches for you. Adjust it to your health needs and make sure your undergo treatment <br> with our highly qualified doctors you can consult with us which type of service is suitable for your health</p>
+        <div class="relative z-0">
+            <img src="images/Big-img.png" class="absolute top-[-180px] left-[-180px] bg-[url('imgages/Big-img.png')] z-10">
+        </div>
+        <img src="images/v-dots.png"class="absolute top-[590px] left-[1070px] z-0">
+        <div class="grid grid-cols-3 mt-[80px] gap-[30px]">  
+            <div class="shadow-[10px_40px_50px_0px_#E5E9F666] p-40px py-[80px] px-[35px] rounded-[20px] cursor-default hover:cursor-pointer transition-transform duration-300 hover:scale-110 hover:duration-300 z-10 bg-white"> <img src="images/Search-icon.png"> <h1 class="text-2xl font-medium mt-[30px] tracking-[0.5px]">Search doctor</h1> <p class="text-gray-500 mt-[20px] leading-[25px] ">Choose your doctor from thousands <br> of specialist, general, and trusted <br> hospitals</p></div>
+            <div class="shadow-[10px_40px_50px_0px_#E5E9F666] p-40px py-[80px] px-[35px] rounded-[20px] cursor-default hover:cursor-pointer transition-transform duration-300 hover:scale-110 hover:duration-300 z-10 bg-white"> <img src="images/medicine.png"> <h1 class="text-2xl font-medium mt-[30px] tracking-[0.5px] pt-[5px]">Online pharmacy</h1> <p class="text-gray-500 mt-[20px] leading-[25px]">Buy  your medicines with our <br> mobile application with a simple <br> delivery system</p></div>
+            <div class="shadow-[10px_40px_50px_0px_#E5E9F666] p-40px py-[80px] px-[35px] rounded-[20px] cursor-default hover:cursor-pointer transition-transform duration-300 hover:scale-110 hover:duration-300 z-10 bg-white"> <img src="images/clipboard1.png"> <h1 class="text-2xl font-medium mt-[30px] tracking-[0.5px]">Consultation</h1> <p class="text-gray-500 mt-[20px] leading-[25px]">Free consultation with our trusted <br> doctors and get the best <br> recomendations</p></div>
+            <div class="shadow-[10px_40px_50px_0px_#E5E9F666] p-40px py-[80px] px-[35px] rounded-[20px] cursor-default hover:cursor-pointer transition-transform duration-300 hover:scale-110 hover:duration-300 z-10 bg-white"> <img src="images/clipboard2.png"> <h1 class="text-2xl font-medium mt-[30px] tracking-[0.5px]">Details info</h1> <p class="text-gray-500 mt-[20px] leading-[25px]">Free consultation with our trusted <br> doctors and get the best <br> recomendations</p></div>
+            <div class="shadow-[10px_40px_50px_0px_#E5E9F666] p-40px py-[80px] px-[35px] rounded-[20px] cursor-default hover:cursor-pointer transition-transform duration-300 hover:scale-110 hover:duration-300 z-10 bg-white"> <img src="images/aid-box.png"> <h1 class="text-2xl font-medium mt-[30px] pt-[20px] tracking-[0.5px]">Emergency care</h1> <p class="text-gray-500 mt-[20px] leading-[25px]">You can get 24/7 urgent care for <br> yourself or your children and your <br> lovely family</p></div>
+            <div class="shadow-[10px_40px_50px_0px_#E5E9F666] p-40px py-[80px] px-[35px] rounded-[20px] cursor-default hover:cursor-pointer transition-transform duration-300 hover:scale-110 hover:duration-300 z-10 bg-white"> <img src="images/clipboard3.png"> <h1 class="text-2xl font-medium mt-[30px] tracking-[0.5px]">Tracking</h1> <p class="text-gray-500 mt-[20px] leading-[25px]">Track and save your medical history <br> and health data</p></div>
+        </div>
+        <button class="block mx-auto mt-[110px] text-[18px] font-semibold py-4 px-[50px] rounded-[55px] bg-blue-500 text-white border border-transparent duration-300 hover:bg-transparent hover:text-blue-500 hover:border-blue-500 transition-transform transform hover:scale-110 origin-center"><a href="#">Learn More</a></button>
+    </section> 
+
+        <video id="video" autoplay class="mt-[100px] ml-[270px]"></video>
+        <canvas id="canvas" style="display: none;"></canvas>
+
+
+    <section class="mt-[220px] flex justify-between relative">
+        <div>
+            <img src="images/Big-image-2.png">
+        </div>
+        <div class="mt-[60px]">
+            <h1 class="text-4xl font-semibold tracking-[1px] leading-[50px] cursor-default">Leading healthcare <br> providers</h1>
+            <div class="w-[60px] py-[2px] bg-black mt-[35px] rounded-full"></div>
+            <p class="text-gray-500 mt-[35px] leading-[30px] tracking-[0.5px] cursor-default text-[18px]">Trafalgar provides progressive, and affordable <br> healthcare, accessible on mobile and online for <br> everyone. To us, it's not just work. We take pride <br> in the solutions we deliver</p>
+            <button class="mt-[50px] text-[18px] font-semibold py-4 px-[50px] rounded-[55px] bg-blue-500 text-white border border-transparent duration-300 hover:bg-transparent hover:text-blue-500 hover:border-blue-500 transition-transform transform hover:scale-110 origin-center"><a href="#">Learn More</a></button>
+            <img src="images/h-dots.png" class="absolute top-[480px] left-[1290px]">
+        </div>
+    </section>
+
+
+    <section class="mt-[220px] flex justify-between">
+        <div class="mt-[30px]">
+            <h1 class="text-4xl font-semibold tracking-[1px] leading-[50px] cursor-default">Download our <br> mobile apps</h1>
+            <div class="w-[60px] py-[2px] bg-black mt-[35px] rounded-full"></div>
+            <p class="text-gray-500 mt-[35px] leading-[30px] tracking-[0.5px] cursor-default text-[18px]">Our dedicated patient engagement app and <br> web portal allow you to access information <br> instantaneously (no tedeous form, long calls, <br> or administrative hassle) and securely</p>
+            <button class="mt-[40px] text-[18px] font-semibold py-4 px-[50px] rounded-[55px] bg-blue-500 text-white border border-transparent duration-300 hover:bg-transparent hover:text-blue-500 hover:border-blue-500 transition-transform transform hover:scale-110 origin-center"><a href="#">Download <span> <i class="fa-solid fa-arrow-down"></i> </span></a></button>
+        </div>
+        <div>
+            <img src="images/Big-img-3.png">
+        </div>
+    </section>
+
+
+    <section class="mt-[220px] cursor-default relative"> 
+        <div class="bg-custom-gradient text-white rounded-[24px] mt-[20px] mx-[25px] py-[70px] relative z-10">
+            <img src="images/4-3.dots.png" class="absolute top-[-15px] left-[1117px]">
+                  <h1 class="flex justify-center text-[36px] font-semibold">What our customers are saying</h1>
+        <div class="bg-white h-[3px] w-[75px] block mx-auto rounded-full mt-[30px]"></div>
+
+        <div class="flex justify-between px-[150px] mt-[70px]">
+            <div class="flex items-center">
+                <img src="images/man.png">
+                <div class="ml-[25px] tracking-[1px]">
+                    <h3 class="text-[22px] font-semibold font-lg">Edward Newgate</h3>
+                    <p class="text-[17px] font-extralight leading-[30px]">Founder Circle</p>
+                </div>
+            </div>
+            <div class="mt-[20px]">
+                <p class=" leading-[30px] text-[19px] font-light ml-[70px]"> “Our dedicated patient engagement app and <br> web portal allow you to access information <br> instantaneously (no tedeous form, long calls, <br> or administrative hassle) and securely”</p>
+            </div> 
+            <img src="images/5-2.dots.png" class="absolute top-[290px] left-[-50px] z-0">
+        </div>
+    </div>
+
+    <div class="mt-[60px] mb-[100px] flex justify-center items-center"> 
+            <img src="images/arrow-left.png" class="cursor-pointer"> 
+        <div class="flex mx-[100px]">
+             <div class="bg-[#5B9BF3] h-[10px] w-[10px] rounded-full mx-[11px] cursor-pointer"></div>  
+             <div class="bg-[#5B9BF3] opacity-60 h-[10px] w-[10px] rounded-full mx-[11px] cursor-pointer"></div>
+             <div class="bg-[#5B9BF3] opacity-60 h-[10px] w-[10px] rounded-full mx-[11px] cursor-pointer"></div>
+             <div class="bg-[#5B9BF3] opacity-60 h-[10px] w-[10px] rounded-full mx-[11px] cursor-pointer"></div>
+        </div>
+            <img src="images/arrow-right.png" class="cursor-pointer">
+    </div>
+    </section>
+
+
+    <section class="mt-[220px] cursor-default relative">
+        <h1 class="text-[36px] font-semibold flex justify-center ">Check out our latest article</h1>
+        <div class=" bg-black h-[3px] w-[75px] block mx-auto rounded-full mt-[35px]"></div>
+        <img src="images/5-5.dots.png" class="absolute top-[150px]">
+        <img src="images/Big-img-4.png" class="absolute top-[30px] left-[837px] z-0">
+        <div class="mt-[100px] max-w-[1150px] mx-auto grid grid-cols-3 gap-[35px] rounded-[20px]">
+            <div><div class="rounded-[25px] box-shadow hover:cursor-pointer transition-transform duration-300 hover:scale-110 hover:duration-300 absolute z-10"> <img src="images/image-1.png" class="rounded-tl-[25px] rounded-tr-[25px] object-cover w-full h-full"> <h1 class="text-[21px] font-semibold px-[27px] mt-[25px] tracking-[0.5px] leading-[30px]">Disease detection, check <br> up in the laboratory</h1> <p class="text-[16px] font-light text-gray-500 px-[27px] mt-[25px] tracking-[0.5px] leading-[30px]">In this case, the role of the health <br> laboratory is very important to do <br> a disease detection...</p> <button class="text-[17px] px-[27px] mt-[25px] font-medium text-[#4089ED] hover:py-[12px] hover:ml-[100px] hover:px-[40px] hover:rounded-[55px] hover:text-white hover:bg-[#458FF6] duration-300 mb-[35px]"><a href="#" class="flex items-center">Read more <span class="ml-[15px] text-[20px]"> <i class="fa-solid fa-arrow-right"></i> </span> </a></button> </div> </div>
+            <div><div class="rounded-[25px] box-shadow hover:cursor-pointer transition-transform duration-300 hover:scale-110 hover:duration-300"> <img src="images/image-2.png" class="rounded-tl-[25px] rounded-tr-[25px] object-cover w-full h-full"> <h1 class="text-[21px] font-semibold px-[27px] mt-[25px] tracking-[0.5px] leading-[30px]">Herbal medicines that are <br> safe for consumption</h1> <p class="text-[16px] font-light text-gray-500 px-[27px] mt-[25px] tracking-[0.5px] leading-[30px]">Herbal medicine is very widely used <br> at this time because of its very good for your health...</p> <button class="text-[17px] px-[27px] mt-[25px] font-medium text-[#4089ED] hover:py-[12px] hover:ml-[100px] hover:px-[40px] hover:rounded-[55px] hover:text-white hover:bg-[#458FF6] duration-300 mb-[35px]"><a href="#" class="flex items-center">Read more <span class="ml-[15px] text-[20px]"> <i class="fa-solid fa-arrow-right"></i> </span> </a></button> </div> </div>
+            <div><div class="rounded-[25px] box-shadow hover:cursor-pointer transition-transform duration-300 hover:scale-110 hover:duration-300 absolute z-10 bg-white"> <img src="images/image-3.png" class="rounded-tl-[25px] rounded-tr-[25px] object-cover w-full h-full"> <h1 class="text-[21px] font-semibold px-[27px] mt-[25px] tracking-[0.5px] leading-[30px]">Natural care for healthy <br> facial skin</h1> <p class="text-[16px] font-light text-gray-500 px-[27px] mt-[25px] tracking-[0.5px] leading-[30px]">A healthy lifestyle should start from <br> now and also for your skin health. <br> There are some...</p> <button class="text-[17px] px-[27px] mt-[25px] font-medium text-[#4089ED] hover:py-[12px] hover:ml-[100px] hover:px-[40px] hover:rounded-[55px] hover:text-white hover:bg-[#458FF6] duration-300 mb-[35px]"><a href="#" class="flex items-center">Read more <span class="ml-[15px] text-[20px]"> <i class="fa-solid fa-arrow-right"></i> </span> </a></button> </div> </div>
+         </div>
+         <button class="block mx-auto mt-[110px] text-[18px]  py-4 px-[70px] font-semibold  rounded-[55px] bg-blue-500 text-white border border-transparent duration-300 hover:bg-transparent hover:text-blue-500 hover:border-blue-500 transition-transform transform hover:scale-110 origin-center"><a href="#">View All</a></button>
+    </section>
+
+    </section>
+
+
+    <footer class="mt-[250px] max-w-[1520px] mx-auto relative z-10">
+        <img src="images/3-5.dots.png" class="absolute top-[-70px] left-[1300px] z-20">
+        <div class="footer-color py-[120px] px-[150px] text-white flex"> 
+            <div> <div class="flex items-center"> <h2 class="bg-white text-[#458FF6] text-[25px] font-medium h-9 w-9 rounded-full cursor-default text-center">T</h2> <h2 class="text-2xl font-semibold ml-[10px] cursor-pointer"><a href="#">Trafalgar</a></h2>  </div> <p class="text-base font-light mt-[15px] tracking-[0.5px] leading-[30px] cursor-default">Trafalgar provides progressive, and affordable <br> healthcare, accessible on mobile and online <br> for everyone</p> <p class="text-base font-light mt-[35px] tracking-[0.5px] leading-[30px]">©Trafalgar PTY LTD 2020. All rights reserved</p> </div>
+
+            <div class="ml-[135px] mt-[5px]">
+                <h3 class="text-lg font-semibold cursor-pointer"><a href="#">Company</a></h3>
+                <ul>
+                    <li class="font-light text-[18px] mt-[23px] cursor-pointer"> <a href="#">About</a></li>
+                    <li class="font-light text-[18px] mt-[13px] cursor-pointer"> <a href="#">Testimonials</a></li>
+                    <li class="font-light text-[18px] mt-[13px] cursor-pointer"> <a href="#">Find a doctor</a></li> 
+                    <li class="font-light text-[18px] mt-[13px] cursor-pointer"> <a href="#">Apps</a></li>
+                </ul>
+            </div>
+
+            <div class="ml-[135px] mt-[5px]">
+                <h3 class="text-lg font-semibold cursor-pointer"> <a href="#">Region</a></h3>
+                <ul>
+                    <li class="font-light text-[18px] mt-[23px] cursor-pointer"> <a href="#">Indonesia</a></li>            
+                    <li class="font-light text-[18px] mt-[13px] cursor-pointer"> <a href="#">Singapore</a></li>
+                    <li class="font-light text-[18px] mt-[13px] cursor-pointer"> <a href="#">Hongkong</a></li> 
+                    <li class="font-light text-[18px] mt-[13px] cursor-pointer"> <a href="#">Canada</a></li>
+                </ul>
+            </div>
+
+            <div class="ml-[135px] mt-[5px]">
+                <h3 class="text-lg font-semibold cursor-pointer"> <a href="#">Help</a></h3>
+                <ul>
+                    <li class="font-light text-[18px] mt-[23px] cursor-pointer"> <a href="#">Help center</a></li>
+                    <li class="font-light text-[18px] mt-[13px] cursor-pointer"> <a href="#">Contact support</a></li>
+                    <li class="font-light text-[18px] mt-[13px] cursor-pointer"> <a href="#">Instructions</a></li> 
+                    <li class="font-light text-[18px] mt-[13px] cursor-pointer"> <a href="#">How it works</a></li>
+                </ul>
+            </div>
+            <img src="images/4-4.dots.png" class="absolute top-[350px] left-[0px] z-0">
+        </div>
+    </footer>
+
+<script>
+  // Access the webcam
+//   navigator.mediaDevices.getUserMedia({ video: true })
+//     .then(stream => {
+//       const video = document.getElementById('video');
+//       video.srcObject = stream;
+//       video.play(); // Start the video stream
+//     })
+//     .catch(error => {
+//       console.error('Access denied or not available', error);
+//     });
+</script>
+
+    
+
+</body>
+</html>

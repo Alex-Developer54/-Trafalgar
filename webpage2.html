@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Tailwind 1 Project Trafalgar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              screens: {
+                'sm': {'min': '320px', 'max': '480px'},
+                'md': '768px',
+                'lg': '1024px',
+                'xl': '1280px',
+                '2xl': '1536px',
+              }
+            }
+          }
+        };
+      </script>
+</head>
+<body>
+    <section class="mt-[200px] max-w-[1150px] mx-auto relative sm:mt-[50px]">
+        <h1 class="font-semibold text-center text-4xl cursor-default sm:text-xl sm:block sm:mx-auto">Our Services</h1>
+        <div class=" bg-black h-[3px] w-[75px] block mx-auto rounded-full mt-8"></div>
+        <p class="text-center text-[18px] mt-10 text-gray-500 leading-[25px] cursor-default">We provide to you the best choiches for you. Adjust it to your health needs and make sure your undergo treatment <br> with our highly qualified doctors you can consult with us which type of service is suitable for your health</p>
+        <div class="relative z-0">
+            <img src="images/Big-img.png" class="absolute top-[-180px] left-[-180px] bg-[url('imgages/Big-img.png')] z-10">
+        </div>
+        <img src="images/v-dots.png"class="absolute top-[590px] left-[1070px] z-0">
+        <div class="grid grid-cols-3 mt-[80px] gap-[30px]">  
+            <div class="shadow-[10px_40px_50px_0px_#E5E9F666] p-40px py-[80px] px-[35px] rounded-[20px] cursor-default hover:cursor-pointer transition-transform duration-300 hover:scale-110 hover:duration-300 z-10 bg-white"> <img src="images/Search-icon.png"> <h1 class="text-2xl font-medium mt-[30px] tracking-[0.5px]">Search doctor</h1> <p class="text-gray-500 mt-[20px] leading-[25px] ">Choose your doctor from thousands <br> of specialist, general, and trusted <br> hospitals</p></div>
+            <div class="shadow-[10px_40px_50px_0px_#E5E9F666] p-40px py-[80px] px-[35px] rounded-[20px] cursor-default hover:cursor-pointer transition-transform duration-300 hover:scale-110 hover:duration-300 z-10 bg-white"> <img src="images/medicine.png"> <h1 class="text-2xl font-medium mt-[30px] tracking-[0.5px] pt-[5px]">Online pharmacy</h1> <p class="text-gray-500 mt-[20px] leading-[25px]">Buy  your medicines with our <br> mobile application with a simple <br> delivery system</p></div>
+            <div class="shadow-[10px_40px_50px_0px_#E5E9F666] p-40px py-[80px] px-[35px] rounded-[20px] cursor-default hover:cursor-pointer transition-transform duration-300 hover:scale-110 hover:duration-300 z-10 bg-white"> <img src="images/clipboard1.png"> <h1 class="text-2xl font-medium mt-[30px] tracking-[0.5px]">Consultation</h1> <p class="text-gray-500 mt-[20px] leading-[25px]">Free consultation with our trusted <br> doctors and get the best <br> recomendations</p></div>
+            <div class="shadow-[10px_40px_50px_0px_#E5E9F666] p-40px py-[80px] px-[35px] rounded-[20px] cursor-default hover:cursor-pointer transition-transform duration-300 hover:scale-110 hover:duration-300 z-10 bg-white"> <img src="images/clipboard2.png"> <h1 class="text-2xl font-medium mt-[30px] tracking-[0.5px]">Details info</h1> <p class="text-gray-500 mt-[20px] leading-[25px]">Free consultation with our trusted <br> doctors and get the best <br> recomendations</p></div>
+            <div class="shadow-[10px_40px_50px_0px_#E5E9F666] p-40px py-[80px] px-[35px] rounded-[20px] cursor-default hover:cursor-pointer transition-transform duration-300 hover:scale-110 hover:duration-300 z-10 bg-white"> <img src="images/aid-box.png"> <h1 class="text-2xl font-medium mt-[30px] pt-[20px] tracking-[0.5px]">Emergency care</h1> <p class="text-gray-500 mt-[20px] leading-[25px]">You can get 24/7 urgent care for <br> yourself or your children and your <br> lovely family</p></div>
+            <div class="shadow-[10px_40px_50px_0px_#E5E9F666] p-40px py-[80px] px-[35px] rounded-[20px] cursor-default hover:cursor-pointer transition-transform duration-300 hover:scale-110 hover:duration-300 z-10 bg-white"> <img src="images/clipboard3.png"> <h1 class="text-2xl font-medium mt-[30px] tracking-[0.5px]">Tracking</h1> <p class="text-gray-500 mt-[20px] leading-[25px]">Track and save your medical history <br> and health data</p></div>
+        </div>
+        <button class="block mx-auto mt-[110px] text-[18px] font-semibold py-4 px-[50px] rounded-[55px] bg-blue-500 text-white border border-transparent duration-300 hover:bg-transparent hover:text-blue-500 hover:border-blue-500 transition-transform transform hover:scale-110 origin-center"><a href="#">Learn More</a></button>
+    </section> 
+</body>
+</html>
